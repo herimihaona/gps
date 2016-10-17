@@ -1,0 +1,218 @@
+{
+	"glossaires":
+	{
+	    "NA" : "Animation",
+	    "EA" : "Artiste",
+	    "NC" : "Communication",
+	    "EC" : "Cuisine",
+	    "EI" : "Intendance",
+	    "EN" : "Nature",
+	    "ES" : "Santé",
+	    "TS" : "Sport",
+	    "ET" : "Témoignage",
+	    "CN" : "Coordination"
+	},
+	"questions": 
+	[
+		{
+			"id" : 1,
+			"texte" : "Je propose souvent des nouveaux jeux à mes amis",
+			"choix" : [ {"NA":-1}, {"":1}, {"NA":2} ]
+		},
+		{
+			"id" : 2,
+			"texte" : "Je préfère dessiner que jouer dehors",
+			"choix" : [ {"EN":-1}, {"":1}, {"EA":2} ]
+		},
+		{
+			"id" : 3,
+			"texte" : "Parler avec des personnes que je ne connais pas ne me fait pas peur",
+			"choix" : [ {"":-1}, {"ES":1}, {"NC":2} ]
+		},
+		{
+			"id" : 4,
+			"texte" : "J'écoute souvent de la musique et j'aime chanter",
+			"choix" : [ {"EA":-1}, {"ET":1}, {"EA":2} ]
+		},
+		{
+			"id" : 5,
+			"texte" : "Je sais économiser pour acheter quelque chose qui me plaît",
+			"choix" : [ {"EI":-1}, {"":1}, {"EI":2} ]
+		},
+		{
+			"id" : 6,
+			"texte" : "J'aime bien ranger mes affaires",
+			"choix" : [ {"":-1}, {"EC":1}, {"EI":2} ]
+		},
+		{
+			"id" : 7,
+			"texte" : "Préparer une table pour mes amis me réjouit",
+			"choix" : [ {"":-1}, {"EI":1}, {"EC":2} ]
+		},
+		{
+			"id" : 8,
+			"texte" : "J'ai plaisir à observer les choses autour de moi (nature, tableaux, animaux, etc.)",
+			"choix" : [ {"EA":-1}, {"EN":1}, {"EA":2} ]
+		},
+		{
+			"id" : 9,
+			"texte" : "J'aime lire de belles histoires et les partager",
+			"choix" : [ {"":-1}, {"ET":1}, {"EA":2} ]
+		},
+		{
+			"id" : 10,
+			"texte" : "Je parle beaucoup avec mes amis",
+			"choix" : [ {"NC":-1}, {"ES":1}, {"NC":2} ]
+		},
+		{
+			"id" : 11,
+			"texte" : "J'aime bien le calcul de tête ou sur une feuille",
+			"choix" : [ {"":-1}, {"EC":1}, {"EI":2} ]
+		},
+		{
+			"id" : 12,
+			"texte" : "J'aime écrire ou dessiner des cartes pour mes amis",
+			"choix" : [ {"CN":-1}, {"":1}, {"CN":2} ]
+		},
+		{
+			"id" : 13,
+			"texte" : "J'aime préparer ou aider pour le repas",
+			"choix" : [ {"EC":-1}, {"":1}, {"EC":2} ]
+		},
+		{
+			"id" : 14,
+			"texte" : "Je réfléchis avant de faire quelque chose",
+			"choix" : [ {"":-1}, {"EI":1}, {"CN":2} ]
+		},
+		{
+			"id" : 15,
+			"texte" : "Je joue à beaucoup de sports différents",
+			"choix" : [ {"TS":-1}, {"":1}, {"TS":2} ]
+		},
+		{
+			"id" : 16,
+			"texte" : "Je prie avec envie et non parce qu'il faut le faire",
+			"choix" : [ {"ET":-1}, {"":1}, {"ET":2} ]
+		},
+		{
+			"id" : 17,
+			"texte" : "Je trouve que c'est plus rigolo de jouer en équipe",
+			"choix" : [ {"":-1}, {"NA":1}, {"TS":2} ]
+		},
+		{
+			"id" : 18,
+			"texte" : "Faire rire les autres me donne du plaisir",
+			"choix" : [ {"":-1}, {"EA":1}, {"NA":2} ]
+		},
+		{
+			"id" : 19,
+			"texte" : "J'ai une tirelire et je sais combien j'ai dedans",
+			"choix" : [ {"EI":-1}, {"":1}, {"EI":2} ]
+		},
+		{
+			"id" : 20,
+			"texte" : "J'aime la nature ou les animaux",
+			"choix" : [ {"":-1}, {"":1}, {"EN":2} ]
+		},
+		{
+			"id" : 21,
+			"texte" : "Je pense que la planète est importante",
+			"choix" : [ {"EN":-1}, {"":1}, {"EN":2} ]
+		},
+		{
+			"id" : 22,
+			"texte" : "J'arrive à expliquer les règles d'un nouveau jeu à mes amis",
+			"choix" : [ {"":-1}, {"TS":1}, {"NA":2} ]
+		},
+		{
+			"id" : 23,
+			"texte" : "J'aime faire des jeux dans les bois avec mes amis",
+			"choix" : [ {"":-1}, {"TS":1}, {"EN":2} ]
+		},
+		{
+			"id" : 24,
+			"texte" : "Je suis motivé d'aller à l'église et de ce que j'y vis",
+			"choix" : [ {"":-1}, {"":1}, {"ET":2} ]
+		},
+		{
+			"id" : 25,
+			"texte" : "Je suis attentif à un ami qui se blesse",
+			"choix" : [ {"ES":-1}, {"NC":1}, {"ES":2} ]
+		},
+		{
+			"id" : 26,
+			"texte" : "J'aime Jésus et j'en parle autour de moi",
+			"choix" : [ {"":-1}, {"":1}, {"ET":2} ]
+		},
+		{
+			"id" : 27,
+			"texte" : "Je suis disponible pour servir les plats à table",
+			"choix" : [ {"EC":-1}, {"":1}, {"EC":2} ]
+		},
+		{
+			"id" : 28,
+			"texte" : "Si quelqu'un s'est fait mal je reste souvent avec lui",
+			"choix" : [ {"ES":-1}, {"":1}, {"ES":2} ]
+		},
+		{
+			"id" : 29,
+			"texte" : "J'aime aider les autres",
+			"choix" : [ {"":-1}, {"CN":1}, {"ES":2} ]
+		},
+		{
+			"id" : 30,
+			"texte" : "Je préfère jouer dehors plutôt que rester seul dans ma chambre",
+			"choix" : [ {"NA":-1}, {"EN":1}, {"NA":2} ]
+		},
+		{
+			"id" : 31,
+			"texte" : "Si quelqu'un pleure je vais vers lui",
+			"choix" : [ {"":-1}, {"CN":1}, {"ES":2} ]
+		},
+		{
+			"id" : 32,
+			"texte" : "J'aime sortir et bouger",
+			"choix" : [ {"":-1}, {"NA":1}, {"TS":2} ]
+		},
+		{
+			"id" : 33,
+			"texte" : "Je décroche souvent le téléphone à la maison",
+			"choix" : [ {"NC":-1}, {"":1}, {"NC":2} ]
+		},
+		{
+			"id" : 34,
+			"texte" : "J'ai plaisir à manger un bon repas",
+			"choix" : [ {"":-1}, {"":1}, {"EC":2} ]
+		},
+		{
+			"id" : 35,
+			"texte" : "Je suis toujours volontaire pour une nouvelle idée",
+			"choix" : [ {"":-1}, {"":1}, {"CN":2} ]
+		},
+		{
+			"id" : 36,
+			"texte" : "Gagner un match n'est pas le plus important pour moi",
+			"choix" : [ {"TS":-1}, {"":1}, {"TS":2} ]
+		},
+		{
+			"id" : 37,
+			"texte" : "J'aime lire la Bible",
+			"choix" : [ {"ET":-1}, {"":1}, {"ET":2} ]
+		},
+		{
+			"id" : 38,
+			"texte" : "J'écoute les autres plus que je parle",
+			"choix" : [ {"":-1}, {"NC":1}, {"CN":2} ]
+		},
+		{
+			"id" : 39,
+			"texte" : "J'observe souvent les arbres, nuages, animaux autour de moi",
+			"choix" : [ {"":-1}, {"EA":1}, {"EN":2} ]
+		},
+		{
+			"id" : 40,
+			"texte" : "J'aime faire des projets avec mes amis",
+			"choix" : [ {"CN":-1}, {"":1}, {"CN":2} ]
+		}
+	]
+}
