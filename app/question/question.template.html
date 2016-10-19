@@ -1,5 +1,11 @@
 <header class="navbar navbar-app navbar-absolute-top">
-	<h1 class="text-center">Pour vivre un GPS</h1>
+	<div class="pull-left">
+		<h1 class="text-center">Pour vivre un GPS</h1>
+	</div>
+	<div class="pull-right">
+		<a type="button" class="btn btn-primary" name="valider"
+			ng-click="$ctrl.reset()"><span class="glyphicon glyphicon-repeat"></span></a>
+	</div>
 	<div ng-show="$ctrl.showresult" class="bg-warning text-center"
 		role="alert">
 		<button ng-click="$ctrl.showresult = false" type="button"
@@ -12,29 +18,32 @@
 				: {{value}}</li>
 		</ul>
 		<a ui-if="!modalSendmail" ui-turn-on="modalSendmail"
-			class="label label-primary">
-			<span class="glyphicon glyphicon-envelope"> Envoyer les résultats à ton animateur</span>
+			class="label label-primary"> <span
+			class="glyphicon glyphicon-envelope"> Envoyer les résultats à
+				ton animateur</span>
 		</a>
 	</div>
 </header>
 <article class="app-body scrollable">
 	<div class="scrollable-content">
-		<table class="table table-hover table-responsive">
-			<tr class="emoticone">
-				<th></th>
-				<th></th>
-				<th class="text-center triste">&#128546;</th>
-				<th class="text-center neutre">&#128528;</th>
-				<th class="text-center content">&#128522;</th>
-			</tr>
-			<tr ng-repeat="question in $ctrl.gps.questions">
-				<td>{{question.id}}</td>
-				<td>{{question.texte}}</td>
-				<td class="text-center" ng-repeat="reponse in question.choix"><input
-					type="radio" name="{{question.id}}" value="{{reponse}}"
-					ng-model="$ctrl.reponses[question.id]"></td>
-			</tr>
-		</table>
+		<form name="formQuestion">
+			<table class="table table-hover table-responsive">
+				<tr class="emoticone">
+					<th></th>
+					<th></th>
+					<th class="text-center triste">&#128546;</th>
+					<th class="text-center neutre">&#128528;</th>
+					<th class="text-center content">&#128522;</th>
+				</tr>
+				<tr ng-repeat="question in $ctrl.gps.questions">
+					<td>{{question.id}}</td>
+					<td>{{question.texte}}</td>
+					<td class="text-center" ng-repeat="reponse in question.choix"><input
+						type="radio" name="{{question.id}}" value="{{reponse}}"
+						ng-model="$ctrl.reponses[question.id]" required></td>
+				</tr>
+			</table>
+		</form>
 	</div>
 </article>
 <footer class="navbar navbar-app navbar-absolute-bottom">
@@ -49,25 +58,44 @@
 		<div class="modal-backdrop in"></div>
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<form class="form">
+				<form name="formSendmail">
 					<div class="modal-header">
 						<button class="close" ui-turn-off="modalSendmail">&times;</button>
 						<h4 class="modal-title">Envoyer les résultats à ton animateur</h4>
 					</div>
 					<div class="modal-body">
 						<div class="form-group">
-							<input type="text" class="form-control" id="nom"
-								placeholder="Mets ici ton nom et prénom">
+							<input type="text" ng-model="user.name" name="uName" required
+								class="form-control" placeholder="Mets ici ton nom et ton prénom">
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control" id="email"
+							<input type="email" ng-model="user.email" name="uEmail" required
+								class="form-control"
+								placeholder="Mets ici ton mail ou le mail de tes parents">
+						</div>
+						<div class="form-group">
+							<input type="email" ng-model="user.dest" name="uDest" required
+								class="form-control"
 								placeholder="Mets ici le mail de ton animateur">
 						</div>
 					</div>
-					<div class="modal-footer">
-						<button class="btn btn-primary"><span class="glyphicon glyphicon-send"> Envoyer</span></button>
+					<div class="modal-footer" ng-show="formSendmail.$valid">
+						<button ng-click="sendmail(user)" class="btn btn-primary">
+							<span class="glyphicon glyphicon-send"> Envoyer</span>
+						</button>
 					</div>
 				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal" ui-if="modalMsg" ui-shared-state='modalMsg'>
+		<div class="modal-backdrop in"></div>
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" ui-turn-off="modalMsg">&times;</button>
+					<div class="{{$ctrl.msgClass}}">{{$ctrl.msg}}</div>
+				</div>
 			</div>
 		</div>
 	</div>
