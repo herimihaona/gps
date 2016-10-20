@@ -22,8 +22,7 @@
 			<li ng-repeat="(key, value) in $ctrl.resultat">{{$ctrl.gps.glossaires[key]}}
 				: {{value}}</li>
 		</ul>
-		<a ui-if="!modalSendmail" ui-turn-on="modalSendmail"
-			class="label label-primary">&#9993;<span
+		<a ng-click="$ctrl.mailto()" class="label label-primary">&#9993;<span
 			class="glyphicon glyphicon-envelope"> Envoyer les résultats à
 				ton animateur</span></a>
 	</div>
