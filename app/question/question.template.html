@@ -1,12 +1,17 @@
 <header class="navbar navbar-app navbar-absolute-top">
-	<div class="pull-left">
-		<h1 class="text-center">Pour vivre un GPS</h1>
+	<div>
+		<div class="btn-group navbar-brand-center">
+			<h2 class="text-center">Pour vivre un GPS</h1>
+		</div>
+		<div class="btn-group pull-right">
+			<div>
+				<a type="button" name="reset"
+					ng-click="$ctrl.reset()"><span
+					class="icon">&#8635;</span></a>
+			</div>
+		</div>
 	</div>
-	<div class="pull-right">
-		<a type="button" class="btn btn-primary" name="valider"
-			ng-click="$ctrl.reset()"><span class="glyphicon glyphicon-repeat"></span></a>
-	</div>
-	<div ng-show="$ctrl.showresult" class="bg-warning text-center"
+	<div ng-show="$ctrl.showresult" class="bg-warning text-center resultat"
 		role="alert">
 		<button ng-click="$ctrl.showresult = false" type="button"
 			class="close" data-dismiss="alert" aria-label="Close">
@@ -18,10 +23,9 @@
 				: {{value}}</li>
 		</ul>
 		<a ui-if="!modalSendmail" ui-turn-on="modalSendmail"
-			class="label label-primary"> <span
+			class="label label-primary">&#9993;<span
 			class="glyphicon glyphicon-envelope"> Envoyer les résultats à
-				ton animateur</span>
-		</a>
+				ton animateur</span></a>
 	</div>
 </header>
 <article class="app-body scrollable">
@@ -66,7 +70,8 @@
 					<div class="modal-body">
 						<div class="form-group">
 							<input type="text" ng-model="user.name" name="uName" required
-								class="form-control" placeholder="Mets ici ton nom et ton prénom">
+								class="form-control"
+								placeholder="Mets ici ton nom et ton prénom">
 						</div>
 						<div class="form-group">
 							<input type="email" ng-model="user.email" name="uEmail" required

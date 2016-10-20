@@ -1,11 +1,9 @@
 <!doctype html>
-<!--<html ng-app="gpsApp" lang="fr" manifest="cache.manifest">-->
 <html ng-app="gpsApp" lang="fr">
 <head>
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet"
-	href="libs/bootstrap/bootstrap-3.3.7/css/bootstrap.min.css">	
+<link rel="icon" href="favicon.ico" />
 <link rel="stylesheet"
 	href="libs/mobile-angular-ui/css/mobile-angular-ui-base.min.css">
 <link rel="stylesheet" href="app/app.css">

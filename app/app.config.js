@@ -19,6 +19,8 @@ angular.module('gpsApp').config(
 				function($location, $rootScope) {
 					$rootScope.$on('$routeChangeSuccess', function(event,
 							current, previous) {
-						$rootScope.title = current.$$route.title;
+						if(current.$$route) {
+							$rootScope.title = current.$$route.title;
+						}
 					})
 				} ]);

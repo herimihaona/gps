@@ -21,3 +21,11 @@
 .success {
 	color:green;
 }
+
+.icon {
+	font-size: x-large;
+}
+
+header .resultat {
+	clear:both;
+}
