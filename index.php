@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="gpsApp" lang="fr">
+<html ng-app="gpsApp" lang="fr" manifest="cache.manifest">
 <head>
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
